@@ -42,7 +42,7 @@ userRouter.post("/login", async (req, res) => {
           //check for expiry of token//random payload course: "BE"
           let token = jwt.sign(
             { userID: user._id, username: user.name },
-            process.env.secret
+            "masai"
           );
           res.json({ msg: "logged in ", token });
         } else {
