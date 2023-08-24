@@ -72,7 +72,7 @@ noteRouter.delete("/delete/:noteID", async (req, res) => {
   }
 });
 
-noteRouter.get("/", async (req, res) => {
+noteRouter.get("/pro", async (req, res) => {
   try {
     let { type, category, title, page, limit, sortOrder, sortBy } = req.query;
     // let { id } = req.params;
